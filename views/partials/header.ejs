@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../stylesheets/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <title>Slipseknuden</title>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">HJEM</a>
+                    </li>
+                    <li>
+                        <a href="/info">OM SLIPSEKNUDEN</a>
+                    </li>
+                    <li>
+                        <a href="/garanti">GARANTI</a>
+                    </li>
+                    <li>
+                        <a href="/contact">KONTAKT</a>
+                    </li>
+                    <li>
+                        <a href="/nyheder">NYHEDER</a>
+                    </li>
+                    <li>
+                        <a href="/products">PRODUKTER</a>
+                    </li>
+                    <li>
+                        <form action="/products">
+
+                            <input type="text" name="search">
+                        </li>
+                        <li>
+                                <button type="submit" class="header-btn"/>
+                                <i class="fa fa-search"></i>
+                                </button>
+                        </form>
+                   
+                        <a href="">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="img">
+                <img src="../../images/slipseknuden.png" alt="slipseknuden_logo" class="slipselogo">
+            </div>
+
+            <div class="sidenav">
+                <h3>Produkter</h3>
+                <ul>
+                    <li>
+                        <a href="/products">ALLE</a>
+                    </li>
+                    <li>
+                        <a href="/products/brand/Shoon Slips">SHOON</a>
+                    </li>
+                    <li>
+                        <a href="/products/brand/Korea Special">KOREA SPECIAL</a>
+                    </li>
+                    <li>
+                        <a href="/products/brand/US Imports">US. IMPORTS</a>
+                    </li>
+                    <li>
+                        <a href="/products/brand/Sleek Fabrics UK">SLEEK FABRICS UK</a>
+                    </li>
+                </ul>
+
+
+                <% var x = Math.floor((Math.random() * 2) + 1); %>
+                
+                
+                
+                <% if(x === 1) { %>
+                    <% for (let index = 0; index <= 1; index++) { %>
+                        <% var y = Math.floor((Math.random() * product.length)); %>
+                            <div class="home-product">
+                                <div class="home-product">
+                                    <div class="products-img">
+                                        <img src="../../images/<%= product[y].billede %>" alt="product[y].brand">
+                                    </div>
+                                    <h3>
+                                        <%= product[y].brand %>
+                                    </h3>
+                                    <p>
+                                        <%= product[y].beskrivelse %>
+                                    </p>
+                                    <p class="home-price">
+                                        <%= product[y].pris %> ,- </p>
+                                    <div class="home-container-link">
+                                        <a href="/products/<%= product[y].id %>" class="home-link">INFO</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <% } %>
+                                <% } %>
+
+                                    <% if(x === 2) { %>
+                                        <% for (let index = 0; index <= 1; index++) { %>
+                                            <div class="home-info">
+                                                <div>
+                                                    <h4>
+                                                        <%= news[index].titel.toUpperCase() %>
+                                                    </h4>
+                                                    <p>
+                                                        <%= news[index].nyhed.toUpperCase() %>
+                                                    </p>
+                                                    <a href="/nyheder">LÆS MERE...</a>
+                                                </div>
+
+                                            </div>
+                                            <% } %>
+                                                <% } %>
+
+
+            </div>

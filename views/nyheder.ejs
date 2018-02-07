@@ -1,0 +1,14 @@
+<% include ./partials/header %>
+
+<div class="content">
+    <h3>NYHEDER</h3>
+    <% news.forEach(news => { %>
+
+        <p class="nyheder-date"><%= news.dato %></p>
+        <p class="nyheder-titel"><%= news.titel %></p>
+        <p class="nyheder-nyhed"><%= news.nyhed %> <a href="#" class="nyheder-link">LÆS MERE...</a></p>
+   
+    <% }) %>
+</div>
+
+<% include ./partials/footer %>

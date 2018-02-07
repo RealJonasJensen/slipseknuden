@@ -1,0 +1,32 @@
+<% include ./partials/header %>
+
+    <div class="content">
+        <div class="contact-form">
+            <form action="#">
+                <table>
+                        <tr><td>NAVN</td><td><input type="text" class="form-navn"/></td></tr>
+                    
+                        <tr><td>E-MAIL</td><td><input class="form-email" type="text"/></td></tr>
+
+                        <tr><td class="td-besked">BESKED</td><td><textarea name="besked" id="besked" cols="30" rows="10" class="form-besked"></textarea></td></tr>
+                    
+                    </table>
+                    <button type="submit" class="form-submit">SEND</button>
+
+            </form>
+        </div>
+        <div class="contact-img">
+                <img src="../../images/10_tern.jpg" alt="Tern">
+        </div>
+        <div class="contact-info">
+            <p>Slipseknuden</p>
+            <p>Slipsevej 79</p>
+            <p>4000 Holbæk</p>
+            <p>Telefon: 5944-1234</p>
+            <p>slips@slipseknuden.dk</p></div>
+        <div class="contact-map">
+            <img src="../../images/maps.png" alt="Google Maps">
+        </div>
+    </div>
+
+    <% include ./partials/footer %>

@@ -1,0 +1,25 @@
+<% include ./partials/header %>
+
+    <div class="content">
+            <% product.forEach(product => { %>
+                <% if(id == product.id) { %>
+
+
+                    <div class="show-info">
+                        <h3><%= product.brand %></h3>
+                        <p class="show-type"><%= product.type %></p>
+                        <p class="show-besk"><%= product.beskrivelse %></p>
+                        <p class="show-pris">PRIS: DKK <%= product.pris %>,-</p>
+                    </div>
+                    <div class="show-img">
+                            <img src="../../images/<%= product.billede %>" alt="product.brand">
+                    </div>
+                    
+
+                <% } %>
+
+
+            <% }) %>
+    </div>
+
+<% include ./partials/footer %>

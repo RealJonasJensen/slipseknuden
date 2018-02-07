@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#wrapper {
+  width: 916px;
+  height: 100%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+/* MenuBar/Flexbox */
+
+/* Top Menu */
+
+nav {
+  background-color: #000;
+}
+
+nav input {
+  border: none;
+  margin: 9% 10% 5% 20%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+
+i {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+nav ul li a {
+  display: inline-block;
+  margin-top: 3%;
+}
+
+.fa {
+  font-size: 10px;
+}
+
+li input {
+  margin-top: 10%;
+  padding: 4%;
+}
+
+.fa {
+  color: #FFF;
+  display: block;
+}
+
+.header-btn {
+  font-family: FontAwesome;
+  background-color: black;
+  border: none;
+  font-size: 1em;
+}
+
+.header-btn:hover{
+  cursor: pointer;
+}
+
+/* Side Bar*/
+
+.img {
+  width: 100%;
+}
+
+.sidenav {
+  width: 30%;
+  height: 100%;
+  margin: 0;
+  float: left;
+}
+
+.sidenav ul {
+  list-style-type: none;
+}
+
+.sidenav a {
+  text-decoration: none;
+  text-align: center;
+  color: #FFF;
+}
+
+.sidenav ul li a {
+  padding: 5%;
+  margin: 1%;
+  display: block;
+}
+
+.sidenav li {
+  text-align: center;
+  background-color: #000;
+}
+
+.sidenav li:hover {
+  cursor: pointer;
+}
+
+.sidenav h3 {
+  text-align: center;
+  padding: 5%;
+}
+
+.home-info {
+  padding: 10%;
+  margin-top: 15%;
+}
+
+.home-info p {
+  padding: 8% 0;
+}
+
+.home-info a {
+    color: #000;
+    font-weight: bold;
+}
+
+
+
+/* Logo */
+
+.slipselogo {
+height: 150px;
+width: 380px;
+}
+
+/* Footer */
+
+footer {
+  clear: both;
+}
+
+footer ul {
+  display: flex;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  list-style-type: none;
+  justify-content: space-around;
+  width: 916px;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* ----------- Content -------------- */
+
+.content {
+  width: 60%;
+  height: 100%;
+  float: left;
+  margin: 5%;
+}
+
+/* Home */
+
+.home-item {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.home-img {
+  width: 100%;
+  height: 100%;
+}
+
+.home-brand {
+  padding: 3% 0;
+  text-align: center;
+}
+
+.home-besk {
+  text-align: center;
+  padding: 5% 0;
+}
+
+.home-link {
+  text-decoration: none;
+  background-color: #000;
+  color: #FFF;
+  padding: 2% 15%;
+  border-radius: 20px;
+}
+
+.home-container-link {
+  width: 100%;
+  text-align: center;
+}
+
+.home-text {
+  margin-top: 80%;
+}
+
+.home-product {
+    width: 90%;
+    height: 100%;
+    padding: 10% 0;
+}
+
+.home-price {
+  padding: 10% 0;
+  font-size: 2em;
+}
+
+/* All products */
+
+.products-product {
+  width: 33%;
+  height: 100%;
+  float: left;
+  padding-bottom: 10%;
+}
+
+.products-img img {
+  height: 150px;
+  width: 100%;
+}
+.products-img {
+  width: 55%;
+  height: 100%;
+  float: left;
+  padding-bottom: 10%;
+}
+
+
+.products-product h3 {
+  float: left;
+  width: 45%;
+  font-size: 1em;
+  text-align: left;
+  padding-bottom: 5%;
+}
+.products-product p {
+  float: left;
+  width: 45%;
+  font-size: .6em;
+}
+
+.products-price {
+  position: relative;
+  font-size: 4em;
+  font-weight: bold;
+  padding-top: 25%;
+}
+
+/* Show One */
+
+.show-info {
+  width: 50%;
+  float: left;
+}
+
+.show-img {
+  width: 40%;
+  float: left;
+}
+
+.show-info h3 {
+  font-size: 2em;
+}
+
+.show-type {
+  font-weight: bold;
+}
+
+.show-pris {
+  font-weight: bold;
+  padding-top: 50%;
+  font-size: 1.6em;
+}
+
+/* ------ INFO ------- */
+
+.info-item {
+  width: 50%;
+  float: left;
+}
+
+.info-img {
+  width: 50%;
+  float: left;
+}
+
+.info-img img {
+  width: 100%;
+  height: 150px;
+}
+
+.info-text {
+  width: 50%;
+  float: left;
+}
+
+.info-navn {
+  padding: 60% 0 0 12%;
+  font-size: .7em;
+  font-weight: bold;
+}
+
+.info-job {
+  font-weight: bold;
+  padding: 20% 0 0 12%;
+  font-size: .7em;
+}
+
+.info-mail {
+  font-size: .7em;
+  padding: 0 0 0 12%;
+}
+
+/*------Garanti-------*/
+
+.garanti-info {
+  padding: 7% 0 0 0;
+}
+
+.garanti-info p {
+  font-weight: bold;
+  padding: 1% 0;
+}
+
+.garanti-img {
+  margin: 0 0 0 40%;
+}
+
+/* ----- Nyheder ------ */
+
+.nyheder-date {
+  color: rgb(255, 128, 0);
+  padding: 3% 0;
+}
+
+.nyheder-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+/* ------ Contact -----*/
+
+.contact-form {
+  width: 50%;
+  float: left;
+}
+
+.form-navn, .form-email, .form-besked {
+  width: 80%;
+  margin-left: 30%;
+  padding: 2% 0;
+  background-color: rgb(241, 241, 241);
+  border: 1px solid rgb(169, 169, 169);
+  border-radius: 10px;
+  resize: none;
+  outline: none;
+}
+
+.contact-img {
+  width: 50%;
+  float: left;
+}
+
+td {
+  padding: 10% 0;
+  font-weight: bold;
+}
+
+.td-besked {
+ padding-bottom: 70%;
+}
+
+.form-submit {
+  padding: 0% 6%;
+  float: right;
+  margin-right: 15%;
+}
+
+.contact-info {
+  width: 50%;
+  float: left;
+  font-weight: bold;
+  text-align: right;
+  font-size: .9em;
+  padding: 45% 5% 0 0;
+}
+
+.contact-info p {
+  padding: 4% 0 0 0;
+}
+
+
+.contact-map {
+  width: 50%;
+  float: left;
+  padding: 10% 0;
+}

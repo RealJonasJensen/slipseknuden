@@ -1,0 +1,29 @@
+<% include ./partials/header %>
+
+
+<div class="content">
+
+        <% product.forEach(product => { %>
+
+            <% if(brand_id == product.brand) { %>
+
+            <div class="products-product">
+                <div class="products-img">
+                    <img src="../../images/<%= product.billede %>" alt="product.brand">
+                </div>
+                <h3><%= product.brand %></h3>
+                <p><%= product.beskrivelse %></p>
+                <p class="products-price"><%= product.pris %> ,- </p>
+                <div class="home-container-link">
+                    <a href="/products/<%= product.id %>" class="home-link">INFO</a>
+                </div>
+            </div>
+
+            <% } %>
+
+       <% }) %>
+
+</div>
+
+
+<% include ./partials/footer %>
